@@ -59,10 +59,9 @@ export default function LandingHero() {
                 inputProps={{
                   sx: {
                     width: 160,
-                    border: "3px solid #30cfbe",
+                    border: "1px solid white",
                     color: "white",
                     fontSize: 20,
-                    fontStyle: "italic",
                     py: 1,
                   },
                 }}

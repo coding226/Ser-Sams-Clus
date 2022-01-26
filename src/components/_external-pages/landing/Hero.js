@@ -8,9 +8,10 @@ import { varWrapEnter, varFadeInRight } from "../../animate";
 const RootStyle = styled(motion.div)(({ theme }) => ({
   position: "relative",
   backgroundColor: theme.palette.grey[400],
-  background: "url(/images/bg.png)",
-  height: '100vh',
-  borderBottom: '5px solid #30cfbe',
+  // background: "url(/images/bg.png)",
+  background: "black",
+  height: "100vh",
+  borderBottom: "5px solid #30cfbe",
   backgroundSize: "cover",
   [theme.breakpoints.up("md")]: {
     top: 0,

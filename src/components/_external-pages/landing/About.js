@@ -40,7 +40,8 @@ const Accordion = styled((props) => (
 ))(({ theme }) => ({
   border: "none",
   marginBottom: theme.spacing(3),
-  backgroundColor: "rgb(46, 25, 100)",
+  // backgroundColor: "rgb(46, 25, 100)",
+  background: "#111",
   transition: "all 0.5s",
 
   borderRadius: 25,
@@ -92,7 +93,8 @@ export default function LandingMinimalHelps() {
               direction="row"
               alignItems="flex-end"
               sx={{
-                background: "url('/images/bg.png')",
+                // background: "url('/images/bg.png')",
+                background: "#111",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 borderRadius: "75px",
@@ -154,7 +156,8 @@ export default function LandingMinimalHelps() {
               justifyContent="flex-start"
               alignItems="center"
               sx={{
-                background: "url('/images/bg.png')",
+                // background: "url('/images/bg.png')",
+                background: '#111',
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 borderRadius: "75px",
@@ -226,7 +229,8 @@ export default function LandingMinimalHelps() {
             alignItems="center"
             flex={1}
             sx={{
-              background: "url('/images/bg.png')",
+              // background: "url('/images/bg.png')",
+              background: '#111',
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               borderRadius: "75px",

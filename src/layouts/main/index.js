@@ -31,7 +31,8 @@ export default function MainLayout() {
         justifyContent="center"
         alignItems="center"
         sx={{
-          bgcolor: "#30cfbe",
+          // bgcolor: "#30cfbe",
+          bgcolor: '#111',
           mt: 3,
           py: 5,
           borderTop: "1px solid rgba(255,255,255,0.2)",
