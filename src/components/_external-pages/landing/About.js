@@ -103,11 +103,11 @@ export default function LandingMinimalHelps() {
             >
               <Box
                 component="img"
-                src="/images/welcome.png"
+                src="/images/logo.png"
                 sx={{ transform: "translateX(-7.5%)" }}
               />
               <Box sx={{ py: 5, pr: 8 }}>
-                <Typography variant="h1">WELCOME!</Typography>
+                <Typography variant="h1">What?</Typography>
                 <Typography variant="body1" sx={{ mt: 5 }}>
                   Our mission here at the academy is simple: Take 10,000 of the
                   smoothest brained apes, put them all in one location and let
@@ -157,7 +157,7 @@ export default function LandingMinimalHelps() {
               alignItems="center"
               sx={{
                 // background: "url('/images/bg.png')",
-                background: '#111',
+                background: "#111",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 borderRadius: "75px",
@@ -167,7 +167,7 @@ export default function LandingMinimalHelps() {
               }}
             >
               <Box sx={{ py: 5, pr: 8, width: 0.8 }}>
-                <Typography variant="h1">UTILITY & ROADMAP</Typography>
+                <Typography variant="h1">Why?</Typography>
                 <Typography variant="body1" sx={{ mt: 5 }}>
                   Minting a Degenerate Ape acts as your enrollment to the most
                   prestigious Academy apes have ever built. While you’re a
@@ -207,7 +207,7 @@ export default function LandingMinimalHelps() {
 
               <Box
                 component="img"
-                src="/images/banana.png"
+                src="/images/logo.png"
                 sx={{
                   position: "absolute",
                   maxWidth: "600px!important",
@@ -230,7 +230,7 @@ export default function LandingMinimalHelps() {
             flex={1}
             sx={{
               // background: "url('/images/bg.png')",
-              background: '#111',
+              background: "#111",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
               borderRadius: "75px",
@@ -240,7 +240,7 @@ export default function LandingMinimalHelps() {
               textAlign: "center",
             }}
           >
-            <Typography variant="h1">TRAIT RARITY</Typography>
+            <Typography variant="h1">When?</Typography>
             <Typography variant="body1" sx={{ mt: 5 }}>
               All apes are equal, but some apes are more equal than others.
               That’s why we’ve established a trait rarity system to tell which
@@ -460,8 +460,8 @@ export default function LandingMinimalHelps() {
         <Stack direction="row" spacing={5}>
           <Box sx={{ flex: 1 }}>
             <Card
-              src={`/images/apes/ape1.jpg`}
-              sx={{ boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
+              src={`/images/logo.png`}
+              sx={{ width: 1, boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
             />
             <Typography variant="h3" align="center">
               @MONOLIFF
@@ -470,8 +470,8 @@ export default function LandingMinimalHelps() {
           </Box>
           <Box sx={{ flex: 1 }}>
             <Card
-              src={`/images/apes/ape8.jpg`}
-              sx={{ boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
+              src={`/images/logo.png`}
+              sx={{ width: 1, boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
             />
             <Typography variant="h3" align="center">
               @GOLD
@@ -480,8 +480,8 @@ export default function LandingMinimalHelps() {
           </Box>
           <Box sx={{ flex: 1 }}>
             <Card
-              src={`/images/apes/ape8.jpg`}
-              sx={{ boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
+              src={`/images/logo.png`}
+              sx={{ width: 1, boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
             />
             <Typography variant="h3" align="center">
               @GOLDENDEV

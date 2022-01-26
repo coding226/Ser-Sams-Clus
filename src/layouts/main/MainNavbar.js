@@ -96,7 +96,7 @@ export default function MainNavbar() {
           }}
         >
           <RouterLink to="/">
-            <Logo />
+            <Logo sx={{ borderRadius: "50%" }} />
           </RouterLink>
 
           <Box sx={{ flexGrow: 1 }} />
@@ -251,7 +251,17 @@ export default function MainNavbar() {
                       />
                     </Link>
                   </Stack>
-                  <Link href="/terms" sx={{color: 'white', fontStyle: 'italic', fontSize: '16px', cursor: 'pointer'}}>Terms & Conditions</Link>
+                  <Link
+                    href="/terms"
+                    sx={{
+                      color: "white",
+                      fontStyle: "italic",
+                      fontSize: "16px",
+                      cursor: "pointer",
+                    }}
+                  >
+                    Terms & Conditions
+                  </Link>
                 </Stack>
               </Box>
             </Drawer>

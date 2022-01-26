@@ -64,7 +64,7 @@ export default function LandingHero() {
             <motion.div variants={varFadeInRight}>
               <Box
                 component="img"
-                src="/images/apeintosh.png"
+                src="/images/logo.png"
                 alt="logo"
                 sx={{ mx: "auto", maxWidth: 520, width: 0.5 }}
               />
