@@ -101,13 +101,13 @@ export default function LandingMinimalHelps() {
                 backgroundPosition: "50%",
               }}
             >
-              <Box
+              {/* <Box
                 component="img"
                 src="/images/logo.png"
                 sx={{ transform: "translateX(-7.5%)" }}
-              />
-              <Box sx={{ py: 5, pr: 8 }}>
-                <Typography variant="h1">What?</Typography>
+              /> */}
+              <Box sx={{ py: 5, px: 8 }}>
+                <Typography variant="h1">WELCOME!</Typography>
                 <Typography variant="body1" sx={{ mt: 5 }}>
                   Our mission here at the academy is simple: Take 10,000 of the
                   smoothest brained apes, put them all in one location and let
@@ -167,7 +167,7 @@ export default function LandingMinimalHelps() {
               }}
             >
               <Box sx={{ py: 5, pr: 8, width: 0.8 }}>
-                <Typography variant="h1">Why?</Typography>
+                <Typography variant="h1">Utility & Roadmap</Typography>
                 <Typography variant="body1" sx={{ mt: 5 }}>
                   Minting a Degenerate Ape acts as your enrollment to the most
                   prestigious Academy apes have ever built. While you’re a
@@ -205,7 +205,7 @@ export default function LandingMinimalHelps() {
                 </Button>
               </Box>
 
-              <Box
+              {/* <Box
                 component="img"
                 src="/images/logo.png"
                 sx={{
@@ -216,7 +216,7 @@ export default function LandingMinimalHelps() {
                   right: "-8%",
                   top: "-6%",
                 }}
-              />
+              /> */}
             </Stack>
           </MotionInView>
         </Box>
@@ -240,7 +240,7 @@ export default function LandingMinimalHelps() {
               textAlign: "center",
             }}
           >
-            <Typography variant="h1">When?</Typography>
+            <Typography variant="h1">Trait Rarity</Typography>
             <Typography variant="body1" sx={{ mt: 5 }}>
               All apes are equal, but some apes are more equal than others.
               That’s why we’ve established a trait rarity system to tell which
@@ -387,6 +387,41 @@ export default function LandingMinimalHelps() {
 
         <Divider sx={{ border: "2px solid #30cfbe", my: 10 }} />
 
+        <Stack direction="row" spacing={3}>
+          <Box sx={{ background: "#111", py: 5, px: 8, borderRadius: 3 }}>
+            <Typography variant="h1">What?</Typography>
+            <Typography variant="body1" sx={{ mt: 5 }}>
+              Our mission here at the academy is simple: Take 10,000 of the
+              smoothest brained apes, put them all in one location and let the
+              mayhem ensue. Our mission here at the academy is simple: Take
+              10,000 of the smoothest brained apes, put them all in one location
+              and let the mayhem ensue.
+            </Typography>
+          </Box>
+          <Box sx={{ background: "#111", py: 5, px: 8, borderRadius: 3 }}>
+            <Typography variant="h1">Why?</Typography>
+            <Typography variant="body1" sx={{ mt: 5 }}>
+              Our mission here at the academy is simple: Take 10,000 of the
+              smoothest brained apes, put them all in one location and let the
+              mayhem ensue. Our mission here at the academy is simple: Take
+              10,000 of the smoothest brained apes, put them all in one location
+              and let the mayhem ensue.
+            </Typography>
+          </Box>
+          <Box sx={{ background: "#111", py: 5, px: 8, borderRadius: 3 }}>
+            <Typography variant="h1">When?</Typography>
+            <Typography variant="body1" sx={{ mt: 5 }}>
+              Our mission here at the academy is simple: Take 10,000 of the
+              smoothest brained apes, put them all in one location and let the
+              mayhem ensue. Our mission here at the academy is simple: Take
+              10,000 of the smoothest brained apes, put them all in one location
+              and let the mayhem ensue.
+            </Typography>
+          </Box>
+        </Stack>
+
+        <Divider sx={{ border: "2px solid #30cfbe", my: 10 }} />
+
         <Typography
           id="faq"
           variant="h1"
@@ -461,7 +496,11 @@ export default function LandingMinimalHelps() {
           <Box sx={{ flex: 1 }}>
             <Card
               src={`/images/logo.png`}
-              sx={{ width: 1, boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
+              sx={{
+                width: 1,
+                boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)",
+                mb: 3,
+              }}
             />
             <Typography variant="h3" align="center">
               @MONOLIFF
@@ -471,7 +510,11 @@ export default function LandingMinimalHelps() {
           <Box sx={{ flex: 1 }}>
             <Card
               src={`/images/logo.png`}
-              sx={{ width: 1, boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
+              sx={{
+                width: 1,
+                boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)",
+                mb: 3,
+              }}
             />
             <Typography variant="h3" align="center">
               @GOLD
@@ -481,7 +524,11 @@ export default function LandingMinimalHelps() {
           <Box sx={{ flex: 1 }}>
             <Card
               src={`/images/logo.png`}
-              sx={{ width: 1, boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)", mb: 3 }}
+              sx={{
+                width: 1,
+                boxShadow: "-12px 11px 23px 3px rgb(0 0 0 / 75%)",
+                mb: 3,
+              }}
             />
             <Typography variant="h3" align="center">
               @GOLDENDEV

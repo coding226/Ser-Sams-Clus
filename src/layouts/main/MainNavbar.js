@@ -96,7 +96,7 @@ export default function MainNavbar() {
           }}
         >
           <RouterLink to="/">
-            <Logo sx={{ borderRadius: "50%" }} />
+            <Logo />
           </RouterLink>
 
           <Box sx={{ flexGrow: 1 }} />
