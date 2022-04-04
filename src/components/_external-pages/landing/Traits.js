@@ -14,6 +14,7 @@ import {
   FormControlLabel,
   Radio,
   Divider,
+  Hidden,
 } from "@material-ui/core";
 import { varWrapEnter, varFadeInRight } from "../../animate";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -50,7 +51,7 @@ export default function LandingHero() {
   return (
     <>
       <Container maxWidth="xl" sx={{ pt: 30, pb: 20 }}>
-        <Stack direction="row" spacing={10}>
+        <Stack direction={{ xs: "column", md: "row" }} spacing={10}>
           <Stack alignItems="center">
             <FormControl sx={{ m: 1, minWidth: 120, mb: 4 }}>
               <Select
@@ -121,39 +122,62 @@ export default function LandingHero() {
             </FormControl>
           </Stack>
           <Stack flexGrow={1} alignItems="center">
-            <Swiper
-              effect={"coverflow"}
-              grabCursor={true}
-              centeredSlides={true}
-              spaceBetween={0}
-              slidesPerView={3}
-              slidesPerGroup={1}
-              coverflowEffect={{
-                rotate: 50,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                // slideShadows: true,
-              }}
-              navigation={true}
-              style={{ width: 900 }}
-            >
-              {[...Array(13)].map((item, index) => (
-                <SwiperSlide>
-                  <Box
-                    component="img"
-                    src={`/images/apes/ape${index + 1}.jpg`}
-                    sx={{ borderRadius: 2 }}
-                  />
-                </SwiperSlide>
-              ))}
-            </Swiper>
+            <Hidden mdDown>
+              <Swiper
+                effect={"coverflow"}
+                grabCursor={true}
+                centeredSlides={true}
+                spaceBetween={0}
+                slidesPerView={3}
+                slidesPerGroup={1}
+                coverflowEffect={{
+                  rotate: 50,
+                  stretch: 0,
+                  depth: 100,
+                  modifier: 1,
+                  // slideShadows: true,
+                }}
+                navigation={true}
+                style={{ width: 900 }}
+              >
+                {[...Array(13)].map((item, index) => (
+                  <SwiperSlide>
+                    <Box
+                      component="img"
+                      src={`/images/apes/ape${index + 1}.jpg`}
+                      sx={{ borderRadius: 2 }}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </Hidden>
+            <Hidden mdUp>
+              <Swiper
+                grabCursor={true}
+                centeredSlides={true}
+                spaceBetween={0}
+                slidesPerView={1}
+                slidesPerGroup={1}
+                navigation={true}
+                style={{ width: "100%" }}
+              >
+                {[...Array(13)].map((item, index) => (
+                  <SwiperSlide>
+                    <Box
+                      component="img"
+                      src={`/images/apes/ape${index + 1}.jpg`}
+                      sx={{ borderRadius: 2, width: 1 }}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </Hidden>
             <Box
               sx={{
                 border: "3px solid #c6a890",
                 padding: "3px",
                 borderRadius: "16px",
-                width: 400,
+                width: { xs: 0.8, md: 400 },
                 mt: 7,
               }}
             >

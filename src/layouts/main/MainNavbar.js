@@ -161,9 +161,17 @@ export default function MainNavbar() {
               onClose={() => setDrawerOpen(false)}
               PaperProps={{ sx: { width: "100%", flexDirection: "row" } }}
             >
-              <Box flexGrow={1} sx={{ background: "#1d0c47" }} />
-              <Box flexGrow={1} sx={{ background: "#30cfbe" }} />
-              <Box sx={{ background: "#150d29", px: 30 }}>
+              <Hidden mdDown>
+                <Box flexGrow={1} sx={{ background: "#1d0c47" }} />
+                <Box flexGrow={1} sx={{ background: "#30cfbe" }} />
+              </Hidden>
+              <Box
+                sx={{
+                  background: "#150d29",
+                  px: { md: 30 },
+                  width: { xs: 1, md: "initial" },
+                }}
+              >
                 <Stack
                   justifyContent="center"
                   alignItems="center"

@@ -97,7 +97,7 @@ export default function LandingMinimalHelps() {
                 background: "#111",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                borderRadius: "75px",
+                borderRadius: { xs: "20px", md: "75px" },
                 backgroundPosition: "50%",
               }}
             >
@@ -106,7 +106,7 @@ export default function LandingMinimalHelps() {
                 src="/images/logo.png"
                 sx={{ transform: "translateX(-7.5%)" }}
               /> */}
-              <Box sx={{ py: 5, px: 8 }}>
+              <Box sx={{ py: { xs: 2, md: 5 }, px: { xs: 2, md: 8 } }}>
                 <Typography variant="h1">WELCOME!</Typography>
                 <Typography variant="body1" sx={{ mt: 5 }}>
                   Our mission here at the academy is simple: Take 10,000 of the
@@ -160,13 +160,12 @@ export default function LandingMinimalHelps() {
                 background: "#111",
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
-                borderRadius: "75px",
+                borderRadius: { xs: "20px", md: "75px" },
                 backgroundPosition: "50%",
-                padding: "2% 4%",
                 position: "relative",
               }}
             >
-              <Box sx={{ py: 5, pr: 8, width: 0.8 }}>
+              <Box sx={{ py: { xs: 2, md: 5 }, px: { xs: 2, md: 8 } }}>
                 <Typography variant="h1">Utility & Roadmap</Typography>
                 <Typography variant="body1" sx={{ mt: 5 }}>
                   Minting a Degenerate Ape acts as your enrollment to the most
@@ -223,7 +222,7 @@ export default function LandingMinimalHelps() {
 
         <Divider sx={{ border: "2px solid #30cfbe", my: 10 }} />
 
-        <Stack direction="row" id="rarity">
+        <Stack direction={{ xs: "column", md: "row" }} id="rarity">
           <Stack
             justifyContent="flex-start"
             alignItems="center"
@@ -233,7 +232,7 @@ export default function LandingMinimalHelps() {
               background: "#111",
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
-              borderRadius: "75px",
+              borderRadius: { xs: "20px", md: "75px" },
               backgroundPosition: "50%",
               padding: "2% 4%",
               position: "relative",
@@ -274,7 +273,8 @@ export default function LandingMinimalHelps() {
           <Stack flex={1} alignItems="flex-end">
             <Stack
               justifyContent="space-between"
-              sx={{ width: 0.8, height: 1 }}
+              spacing={{ xs: 2, md: 0 }}
+              sx={{ width: { xs: 1, md: 0.8 }, height: 1, mt: { xs: 2 } }}
             >
               <Box
                 sx={{
@@ -387,8 +387,18 @@ export default function LandingMinimalHelps() {
 
         <Divider sx={{ border: "2px solid #30cfbe", my: 10 }} />
 
-        <Stack direction="row" spacing={3}>
-          <Box sx={{ background: "#111", py: 5, px: 8, borderRadius: 3 }}>
+        <Stack
+          direction={{ xs: "column", sm: "column", md: "column", lg: "row" }}
+          spacing={3}
+        >
+          <Box
+            sx={{
+              background: "#111",
+              py: { xs: 2, md: 5 },
+              px: { xs: 2, md: 8 },
+              borderRadius: 3,
+            }}
+          >
             <Typography variant="h1">What?</Typography>
             <Typography variant="body1" sx={{ mt: 5 }}>
               Our mission here at the academy is simple: Take 10,000 of the
@@ -398,7 +408,14 @@ export default function LandingMinimalHelps() {
               and let the mayhem ensue.
             </Typography>
           </Box>
-          <Box sx={{ background: "#111", py: 5, px: 8, borderRadius: 3 }}>
+          <Box
+            sx={{
+              background: "#111",
+              py: { xs: 2, md: 5 },
+              px: { xs: 2, md: 8 },
+              borderRadius: 3,
+            }}
+          >
             <Typography variant="h1">Why?</Typography>
             <Typography variant="body1" sx={{ mt: 5 }}>
               Our mission here at the academy is simple: Take 10,000 of the
@@ -408,7 +425,14 @@ export default function LandingMinimalHelps() {
               and let the mayhem ensue.
             </Typography>
           </Box>
-          <Box sx={{ background: "#111", py: 5, px: 8, borderRadius: 3 }}>
+          <Box
+            sx={{
+              background: "#111",
+              py: { xs: 2, md: 5 },
+              px: { xs: 2, md: 8 },
+              borderRadius: 3,
+            }}
+          >
             <Typography variant="h1">When?</Typography>
             <Typography variant="body1" sx={{ mt: 5 }}>
               Our mission here at the academy is simple: Take 10,000 of the
@@ -426,7 +450,10 @@ export default function LandingMinimalHelps() {
           id="faq"
           variant="h1"
           align="center"
-          sx={{ fontSize: "120px !important", mb: 5 }}
+          sx={{
+            fontSize: { xs: "80px !important", md: "120px !important" },
+            mb: 5,
+          }}
         >
           FAQ'<sup>s</sup>
         </Typography>
@@ -486,13 +513,19 @@ export default function LandingMinimalHelps() {
 
         <Typography
           variant="h1"
-          sx={{ fontSize: "120px !important", mb: 5 }}
+          sx={{
+            fontSize: { xs: "80px !important", md: "120px !important" },
+            mb: 5,
+          }}
           align="center"
         >
           TEAM
         </Typography>
 
-        <Stack direction="row" spacing={5}>
+        <Stack
+          direction={{ xs: "column", sm: "column", md: "column", lg: "row" }}
+          spacing={5}
+        >
           <Box sx={{ flex: 1 }}>
             <Card
               src={`/images/logo.png`}
